@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		CB4975121D9EE60700D754E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4975111D9EE60700D754E8 /* AppDelegate.swift */; };
-		CB4975141D9EE60700D754E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4975131D9EE60700D754E8 /* ViewController.swift */; };
 		CB4975171D9EE60800D754E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB4975151D9EE60800D754E8 /* Main.storyboard */; };
 		CB4975191D9EE60800D754E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB4975181D9EE60800D754E8 /* Assets.xcassets */; };
 		CB49751C1D9EE60800D754E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB49751A1D9EE60800D754E8 /* LaunchScreen.storyboard */; };
 		CB4975271D9EE60800D754E8 /* carouselTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4975261D9EE60800D754E8 /* carouselTests.swift */; };
 		CB4975321D9EE60800D754E8 /* carouselUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4975311D9EE60800D754E8 /* carouselUITests.swift */; };
+		CB4975401D9EE75B00D754E8 /* landingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB49753F1D9EE75B00D754E8 /* landingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		CB49750E1D9EE60700D754E8 /* carousel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = carousel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB4975111D9EE60700D754E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CB4975131D9EE60700D754E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CB4975161D9EE60800D754E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CB4975181D9EE60800D754E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB49751B1D9EE60800D754E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		CB49752D1D9EE60800D754E8 /* carouselUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = carouselUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB4975311D9EE60800D754E8 /* carouselUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = carouselUITests.swift; sourceTree = "<group>"; };
 		CB4975331D9EE60800D754E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB49753F1D9EE75B00D754E8 /* landingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = landingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +98,8 @@
 			isa = PBXGroup;
 			children = (
 				CB4975111D9EE60700D754E8 /* AppDelegate.swift */,
-				CB4975131D9EE60700D754E8 /* ViewController.swift */,
 				CB4975151D9EE60800D754E8 /* Main.storyboard */,
+				CB49753F1D9EE75B00D754E8 /* landingViewController.swift */,
 				CB4975181D9EE60800D754E8 /* Assets.xcassets */,
 				CB49751A1D9EE60800D754E8 /* LaunchScreen.storyboard */,
 				CB49751D1D9EE60800D754E8 /* Info.plist */,
@@ -259,7 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB4975141D9EE60700D754E8 /* ViewController.swift in Sources */,
+				CB4975401D9EE75B00D754E8 /* landingViewController.swift in Sources */,
 				CB4975121D9EE60700D754E8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
