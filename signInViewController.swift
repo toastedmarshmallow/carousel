@@ -131,6 +131,12 @@ class signInViewController: UIViewController, UIScrollViewDelegate {
             
             
         }
+    
+    @IBAction func onPress(_ sender: AnyObject) {
+        
+        navigationController?.popToRootViewController(animated: true)
+    }
+    
     }
     
 
