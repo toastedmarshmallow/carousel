@@ -26,6 +26,7 @@ class signInViewController: UIViewController, UIScrollViewDelegate {
     
     var initialY: CGFloat!
     var buttonInitialY: CGFloat!
+    var scrollViewInitialY: CGFloat!
     var offset: CGFloat!
     
     override func viewDidLoad() {
@@ -33,6 +34,7 @@ class signInViewController: UIViewController, UIScrollViewDelegate {
         
         initialY = fieldParentView.frame.origin.y
         buttonInitialY = buttonParentView.frame.origin.y
+        scrollViewInitialY = scrollView.frame.origin.y
         offset = -100
         
         self.navigationItem.title = "Sign In to Dropbox"
@@ -47,10 +49,8 @@ class signInViewController: UIViewController, UIScrollViewDelegate {
 
         // when keyboard is about to display
         NotificationCenter.default.addObserver(forName: Notification.Name.UIKeyboardWillShow, object: nil, queue: OperationQueue.main) { (notification: Notification) in
-            
-            self.fieldParentView.frame.origin.y = self.initialY + self.offset
-            
-            self.buttonParentView.frame.origin.y = self.buttonInitialY + self.offset*2
+                        
+            self.buttonParentView.frame.origin.y = self.buttonInitialY + self.offset
             
             // Scroll the scrollview up
             self.scrollView.contentOffset.y = self.scrollView.contentInset.bottom
@@ -58,7 +58,9 @@ class signInViewController: UIViewController, UIScrollViewDelegate {
         
         // when keyboard is about to hide
         NotificationCenter.default.addObserver(forName: Notification.Name.UIKeyboardWillHide, object: nil, queue: OperationQueue.main) { (notification: Notification) in
-
+            
+             self.scrollView.contentOffset.y = self.initialY
+            
             self.fieldParentView.frame.origin.y = self.initialY
             
             self.buttonParentView.frame.origin.y = self.buttonInitialY
