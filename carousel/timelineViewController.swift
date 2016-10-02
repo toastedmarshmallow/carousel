@@ -1,24 +1,24 @@
 //
-//  landingViewController.swift
+//  timelineViewController.swift
 //  carousel
 //
-//  Created by Shannan Hsiao on 9/30/16.
+//  Created by Shannan Hsiao on 10/1/16.
 //  Copyright © 2016 Shannan Hsiao. All rights reserved.
 //
 
 import UIKit
 
-class landingViewController: UIViewController {
+class timelineViewController: UIViewController {
 
-    @IBOutlet weak var scrollView: UIScrollView!
-    @IBOutlet weak var scrollImage: UIImageView!
-    @IBOutlet weak var photosView: UIView!
+    @IBOutlet weak var timelineScrollView: UIScrollView!
+    @IBOutlet weak var feedView: UIImageView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        timelineScrollView.contentSize = CGSize(width: 375, height: 2006)
         // Do any additional setup after loading the view.
-        scrollView.contentSize = CGSize(width: 375, height: 1333)
     }
 
     override func didReceiveMemoryWarning() {
