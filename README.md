@@ -69,7 +69,7 @@ Please list two areas of the assignment you'd like to **discuss further with you
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+![carousel walkthrough] (https://github.com/toastedmarshmallow/carousel/blob/master/Carousel2.gif)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
@@ -79,6 +79,6 @@ Notable challenge this week were the bugs in xCode (this took approximately 2 ho
 
 I did implement the code (is commented out in the submitted code) to get the page controller displaying and changing based on the page the user is on - the layering of the scroll view got to me after a while, still have yet to try the fixed size/position of the "take carousel for a spin" button.
 
-I'm submitting at this point (in case I don't wake up later from getting the kiddos done) but intend to work on the code more this evening. If I don't get it done this evening, I'll spend extra time implementing the optionals this week.
+I'm submitting at this point (in case I don't wake up later from getting the kiddos to sleep) but intend to work on the code more this evening. If I don't get it done this evening, I'll spend extra time implementing the optionals this week.
 
 * Any libraries or borrowed content.
